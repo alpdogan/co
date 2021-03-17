@@ -184,7 +184,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run test-build --scripts-prepend-node-path && CI=true yarn test && lint-staged"
+      "pre-commit": ""
     }
   },
   "lint-staged": {
