@@ -1,141 +1,253 @@
 {
-    "name": "@welovedevs/react-ultimate-resume",
-    "version": "1.1.1",
-    "description": "Developer profile for W3D",
-    "main": "lib/index.js",
-    "scripts": {
-        "start": "node index.js",
-        "heroku-postbuild": "yarn && yarn run build",
-        "start:client": "touch .env.local && sh -ac 'sh .env.${NODE_ENV:-local}; PORT=${PORT:-3000} EXTEND_ESLINT=true BROWSER=none react-scripts start'",
-        "dev": "yarn start",
-        "eject": "react-scripts eject",
-        "test": "react-scripts test",
-        "prepackage": "rimraf lib ",
-        "package": "./node_modules/.bin/babel --extensions '.ts,.tsx,.js,.jsx' src/package -d .",
-        "postpackage": "cp-cli src/package/i18n i18n && cp-cli src/package/assets assets",
-        "test-build": "rimraf ./test-build && ./node_modules/.bin/babel --extensions '.ts,.tsx,.js,.jsx' src -d ./test_build",
-        "posttest-build": "rimraf ./test_build ./styles ",
-        "build": "react-scripts build",
-        "build:messages": "NODE_ENV=production babel ./src >/dev/null",
-        "serve": "react-scripts build && serve build",
-        "manage:translations": "node ./translationRunner.js",
-        "gh-deploy": "yarn build && gh-pages -d build",
-        "version:beta": "npm version prerelease --preid=beta",
-        "version:release": "npm version ${VERSION:-patch}"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/welovedevs/react-ultimate-resume.git"
-    },
-    "author": "WeLoveDevs.com",
-    "license": "AGPLv3",
-    "peerDependencies": {
-        "@material-ui/core": "^4.11.0",
-        "@welovedevs/ui": "1.1.4",
-        "formik": "^2.1.2",
-        "react": "^16.14.0",
-        "react-dom": "^16.14.0"
-    },
-    "dependencies": {
-        "@date-io/moment": "^1.3.13",
-        "@formatjs/intl-pluralrules": "^1.5.2",
-        "@formatjs/intl-relativetimeformat": "^4.5.9",
-        "@material-ui/pickers": "^3.2.9",
-        "@types/giphy-api": "^2.0.2",
-        "@welovedevs/ui": "1.2.0",
-        "chroma-js": "^2.1.0",
-        "classnames": "^2.2.6",
-        "copy-to-clipboard": "^3.3.1",
-        "cp-cli": "^2.0.0",
-        "downloadjs": "^1.4.7",
-        "formik": "^2.1.2",
-        "framer-motion": "^3.3.0",
-        "jss-preset-default": "10.0.3",
-        "lodash": "^4.17.15",
-        "moment": "^2.24.0",
-        "prop-types": "15.7.2",
-        "react-dropzone": "^10.2.1",
-        "react-emoji-render": "^1.2.1",
-        "react-images": "^1.1.0-beta.3",
-        "react-infinite-scroller": "^1.2.4",
-        "react-intl": "^3.9.3",
-        "react-jss": "10.0.3",
-        "react-slick": "^0.25.2",
-        "react-sortable-hoc": "^1.11.0",
-        "react-use-dimensions": "^1.2.1",
-        "recharts": "^2.0.0-beta.1",
-        "respinner": "^3.0.2",
-        "use-debounce": "^3.3.0",
-        "uuid": "^3.4.0",
-        "values.js": "^1.0.3",
-        "whatwg-fetch": "^2.0.4",
-        "yup": "^0.28.0"
-    },
-    "devDependencies": {
-        "@babel/cli": "^7.8.4",
-        "@babel/core": "^7.9.0",
-        "@babel/eslint-plugin": "^7.12.1",
-        "@babel/plugin-proposal-optional-chaining": "^7.9.0",
-        "@babel/plugin-transform-runtime": "^7.9.0",
-        "@babel/preset-env": "^7.9.0",
-        "@babel/preset-react": "^7.9.4",
-        "@babel/preset-typescript": "^7.12.1",
-        "@testing-library/jest-dom": "5.3.0",
-        "@testing-library/react": "10.0.1",
-        "babel-plugin-css-modules-transform": "^1.6.2",
-        "babel-plugin-inline-react-svg": "^1.1.1",
-        "babel-plugin-react-intl": "^7.0.0",
-        "babel-plugin-transform-import-styles": "^0.0.11",
-        "eslint": "^7.12.1",
-        "eslint-config-airbnb": "^18.2.0",
-        "eslint-plugin-import": "^2.22.1",
-        "eslint-plugin-jsx-a11y": "^6.4.1",
-        "eslint-plugin-react": "^7.21.5",
-        "eslint-plugin-react-hooks": "^4.2.0",
-        "gh-pages": "^2.2.0",
-        "husky": "^3.1.0",
-        "lint-staged": "^10.0.8",
-        "ora": "^4.0.3",
-        "prettier": "2.0.2",
-        "react-intl-translations-manager": "^5.0.3",
-        "react-scripts": "^4.0.0",
-        "readline-sync": "^1.4.10",
-        "rimraf": "^3.0.0",
-        "serve": "^11.3.0",
-        "typescript": "^4.0.5"
-    },
-    "resolutions": {
-        "jss": "10.0.3",
-        "react": "16.14.0",
-        "react-dom": "16.14.0",
-        "@material-ui/core": "4.11.0"
-    },
-    "eslintConfig": {
-        "extends": "react-app"
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "npm run test-build --scripts-prepend-node-path && CI=true yarn test && lint-staged"
-        }
-    },
-    "lint-staged": {
-        "*.+(js|jsx|scss)": [
-            "prettier --loglevel=debug --write"
-        ],
-        "*.+(ts|tsx)": [
-            "prettier --loglevel=debug --write"
-        ]
+  "name": "@welovedevs/react-ultimate-resume",
+  "version": "1.1.1",
+  "description": "Developer profile for W3D",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "node index.js",
+    "heroku-postbuild": "yarn && yarn run build",
+    "start:client": "touch .env.local && sh -ac 'sh .env.${NODE_ENV:-local}; PORT=${PORT:-3000} EXTEND_ESLINT=true BROWSER=none node scripts/start.js'",
+    "dev": "yarn start",
+    "test": "node scripts/test.js",
+    "prepackage": "rimraf lib ",
+    "package": "./node_modules/.bin/babel --extensions '.ts,.tsx,.js,.jsx' src/package -d .",
+    "postpackage": "cp-cli src/package/i18n i18n && cp-cli src/package/assets assets",
+    "test-build": "rimraf ./test-build && ./node_modules/.bin/babel --extensions '.ts,.tsx,.js,.jsx' src -d ./test_build",
+    "posttest-build": "rimraf ./test_build ./styles ",
+    "build": "node scripts/build.js",
+    "build:messages": "NODE_ENV=production babel ./src >/dev/null",
+    "serve": "node scripts/build.js && serve build",
+    "manage:translations": "node ./translationRunner.js",
+    "gh-deploy": "yarn build && gh-pages -d build",
+    "version:beta": "npm version prerelease --preid=beta",
+    "version:release": "npm version ${VERSION:-patch}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/welovedevs/react-ultimate-resume.git"
+  },
+  "author": "WeLoveDevs.com",
+  "license": "AGPLv3",
+  "peerDependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@welovedevs/ui": "1.1.4",
+    "formik": "^2.1.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "dependencies": {
+    "@babel/core": "7.12.3",
+    "@date-io/moment": "^1.3.13",
+    "@formatjs/intl-pluralrules": "^1.5.2",
+    "@formatjs/intl-relativetimeformat": "^4.5.9",
+    "@material-ui/pickers": "^3.2.9",
+    "@pmmmwh/react-refresh-webpack-plugin": "0.4.2",
+    "@svgr/webpack": "5.4.0",
+    "@types/giphy-api": "^2.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
+    "@welovedevs/ui": "1.2.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.6.0",
+    "babel-loader": "8.1.0",
+    "babel-plugin-named-asset-import": "^0.3.7",
+    "babel-preset-react-app": "^10.0.0",
+    "bfj": "^7.0.2",
+    "camelcase": "^6.1.0",
+    "case-sensitive-paths-webpack-plugin": "2.3.0",
+    "chroma-js": "^2.1.0",
+    "classnames": "^2.2.6",
+    "copy-to-clipboard": "^3.3.1",
+    "cp-cli": "^2.0.0",
+    "css-loader": "4.3.0",
+    "dotenv": "8.2.0",
+    "dotenv-expand": "5.1.0",
+    "downloadjs": "^1.4.7",
+    "eslint": "^7.11.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-testing-library": "^3.9.2",
+    "eslint-webpack-plugin": "^2.1.0",
+    "file-loader": "6.1.1",
+    "formik": "^2.1.2",
+    "framer-motion": "^3.3.0",
+    "fs-extra": "^9.0.1",
+    "html-webpack-plugin": "4.5.0",
+    "identity-obj-proxy": "3.0.0",
+    "jest": "26.6.0",
+    "jest-circus": "26.6.0",
+    "jest-resolve": "26.6.0",
+    "jest-watch-typeahead": "0.6.1",
+    "jss-preset-default": "10.0.3",
+    "lodash": "^4.17.15",
+    "mini-css-extract-plugin": "0.11.3",
+    "moment": "^2.24.0",
+    "optimize-css-assets-webpack-plugin": "5.0.4",
+    "pnp-webpack-plugin": "1.6.4",
+    "postcss-flexbugs-fixes": "4.2.1",
+    "postcss-loader": "3.0.0",
+    "postcss-normalize": "8.0.1",
+    "postcss-preset-env": "6.7.0",
+    "postcss-safe-parser": "5.0.2",
+    "prop-types": "15.7.2",
+    "react-app-polyfill": "^2.0.0",
+    "react-dev-utils": "^11.0.0",
+    "react-dropzone": "^10.2.1",
+    "react-emoji-render": "^1.2.1",
+    "react-images": "^1.1.0-beta.3",
+    "react-infinite-scroller": "^1.2.4",
+    "react-intl": "^3.9.3",
+    "react-jss": "10.0.3",
+    "react-refresh": "^0.8.3",
+    "react-slick": "^0.25.2",
+    "react-sortable-hoc": "^1.11.0",
+    "react-use-dimensions": "^1.2.1",
+    "recharts": "^2.0.0-beta.1",
+    "resolve": "1.18.1",
+    "resolve-url-loader": "^3.1.2",
+    "respinner": "^3.0.2",
+    "sass-loader": "8.0.2",
+    "semver": "7.3.2",
+    "style-loader": "1.3.0",
+    "terser-webpack-plugin": "4.2.3",
+    "ts-pnp": "1.2.0",
+    "url-loader": "4.1.1",
+    "use-debounce": "^3.3.0",
+    "uuid": "^3.4.0",
+    "values.js": "^1.0.3",
+    "webpack": "4.44.2",
+    "webpack-dev-server": "3.11.0",
+    "webpack-manifest-plugin": "2.2.0",
+    "whatwg-fetch": "^2.0.4",
+    "workbox-webpack-plugin": "5.1.4",
+    "yup": "^0.28.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/eslint-plugin": "^7.12.1",
+    "@babel/plugin-proposal-optional-chaining": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/preset-typescript": "^7.12.1",
+    "@testing-library/jest-dom": "5.3.0",
+    "@testing-library/react": "10.0.1",
+    "babel-plugin-css-modules-transform": "^1.6.2",
+    "babel-plugin-inline-react-svg": "^1.1.1",
+    "babel-plugin-react-intl": "^7.0.0",
+    "babel-plugin-transform-import-styles": "^0.0.11",
+    "eslint": "^7.12.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "gh-pages": "^2.2.0",
+    "husky": "^3.1.0",
+    "lint-staged": "^10.0.8",
+    "ora": "^4.0.3",
+    "prettier": "2.0.2",
+    "react-intl-translations-manager": "^5.0.3",
+    "readline-sync": "^1.4.10",
+    "rimraf": "^3.0.0",
+    "serve": "^11.3.0",
+    "typescript": "^4.0.5"
+  },
+  "resolutions": {
+    "jss": "10.0.3",
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
+    "@material-ui/core": "4.11.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test-build --scripts-prepend-node-path && CI=true yarn test && lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.+(js|jsx|scss)": [
+      "prettier --loglevel=debug --write"
+    ],
+    "*.+(ts|tsx)": [
+      "prettier --loglevel=debug --write"
+    ]
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/**/*.d.ts"
+    ],
+    "setupFiles": [
+      "react-app-polyfill/jsdom"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+      "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+    ],
+    "testEnvironment": "jsdom",
+    "testRunner": "/Users/tugrulalpdogan/workspace/co/node_modules/jest-circus/runner.js",
+    "transform": {
+      "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$",
+      "^.+\\.module\\.(css|sass|scss)$"
+    ],
+    "modulePaths": [],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web",
+      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+    },
+    "moduleFileExtensions": [
+      "web.js",
+      "js",
+      "web.ts",
+      "ts",
+      "web.tsx",
+      "tsx",
+      "json",
+      "web.jsx",
+      "jsx",
+      "node"
+    ],
+    "watchPlugins": [
+      "jest-watch-typeahead/filename",
+      "jest-watch-typeahead/testname"
+    ],
+    "resetMocks": true
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  }
 }
