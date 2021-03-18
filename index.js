@@ -5,15 +5,18 @@ var morgan = require('morgan')
 
 
 const prerenderToken = process.env.PRERENDER_TOKEN;
-
-console.log("prerenderToken", prerenderToken);
+const prerenderServiceUrl = process.env.PRERENDER_SERVICE_URL;
+console.log("prerender", prerenderServiceUrl, prerenderToken);
 
 const app = express();
 
 app.use(morgan(":method :url :status :response-time ms - :res[content-length]"));
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, './build')));
-app.use(prerender.set('prerenderToken', prerenderToken));
+app.use(prerender
+    .set('prerenderToken', prerenderToken)
+    .set('prerenderServiceUrl', prerenderServiceUrl)
+    );
 
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname + '/build/index.html'));
