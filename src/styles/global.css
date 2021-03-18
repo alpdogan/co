@@ -1,6 +1,4 @@
-html,
-body,
-#root {
+html, body, #root {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -11,4 +9,84 @@ body {
     animation: fade-in 1s ease;
     scroll-behavior: smooth;
     overflow-x: hidden;
+}
+
+.pattern {
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    position: absolute;
+    display: flex;
+}
+
+#banner-container {
+    clip-path: url(#cache);
+}
+
+#banner-anim{
+    position: absolute;
+}
+
+@media only screen and (max-width: 700px) {
+    #banner-anim{
+        position: absolute;
+        height: 100%;
+    }
+}
+
+
+#banner-white {
+    fill: none;
+    opacity: 0.15;
+    stroke: #fff;
+    stroke-width: 12;
+    stroke-miterlimit: 10;
+    animation: show 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#banner-blue {
+    fill: none;
+    opacity: 0.15;
+    stroke: rgb(27, 103, 107);
+    stroke-width: 12;
+    stroke-miterlimit: 10;
+    animation: show 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#banner-light-blue {
+    fill: none;
+    opacity: 0.15;
+    stroke: rgb(27, 103, 107);
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 800;
+    animation: draw 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0.15;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 0.15;
+    }
 }
