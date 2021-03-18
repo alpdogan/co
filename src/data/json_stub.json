@@ -247,7 +247,7 @@
         "work": {
             "contractTypes": [
                 "permanent",
-                "freelancer"
+                "freelance"
             ],
             "codingYears": 15,
             "codingReason": "",
