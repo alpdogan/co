@@ -225,10 +225,10 @@
         "dreamJob": {
             "locations": [
                 {
-                    "name": "Mexico"
+                    "name": "Portugal"
                 },
                 {
-                    "name": "Portugal"
+                    "name": "Mexico"
                 },
                 {
                     "name": "Denmark"
@@ -246,7 +246,8 @@
         },
         "work": {
             "contractTypes": [
-                "permanent"
+                "permanent",
+                "freelancer"
             ],
             "codingYears": 15,
             "codingReason": "",
