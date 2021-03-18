@@ -49,13 +49,13 @@ function App() {
 
     return (
         <DeveloperProfile
-            mode={mode}
+            mode={'mode'}
             data={data}
             onEdit={onEdit}
             onCustomizationChanged={onCustomizationChanged}
             options={{
                 locale: 'en',
-                // side: 'back',
+                //side: 'back',
                 apiKeys: {
                     giphy: process.env.REACT_APP_GIPHY
                 },
@@ -63,12 +63,14 @@ function App() {
                     devicons:
                         'https://firebasestorage.googleapis.com/v0/b/jechercheundev.appspot.com/o/technologies%2Ftechnologies_list.json?alt=media&token=459028ba-d9bc-4480-a3c4-88633afab7e2'
                 },
-                // dismissFooter : true
-                // showContactInfos: true,
-                // maxSkills: 6,
+                dismissFooter : true,
+                showContactInfos: false,
+                maxSkills: 4,
                 customization,
                 disableSortableExperience: false,
-                maxCardsPerRow: 3
+                maxCardsPerRow: 3,
+
+
             }}
             additionalNodes={{
                 banner: {

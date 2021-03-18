@@ -57,9 +57,11 @@ const BannerComponent = ({ customizationOptions, onCustomizationChanged }) => {
             <div className={cn(classes.content, globalReceivedBannerClasses.content)}>
                 <UserInformations />
                 <SocialActions>
-                    {actionsButtons}
-                    {mode === 'edit' && <EditButton />}
-                    {mode === 'edit' && <CustomizeButton customizationOptions={customizationOptions} />}
+                    <div style={{display: window.location.href.includes("localhost") ? "block" : "none"}}>
+                        {actionsButtons}
+                        {mode === 'edit' && <EditButton />}
+                        {mode === 'edit' && <CustomizeButton customizationOptions={customizationOptions} />}
+                    </div>
                 </SocialActions>
             </div>
             {bannerImageCredits?.name && (

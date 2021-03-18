@@ -8,12 +8,12 @@
         "website": "http://alpdogan.co",
         "summary": "A summary of Tugrul",
         "location": {
-            "address": "2712 Broadway St",
-            "postalCode": "CA 94115",
-            "city": "Puebla, MX",
+            "address": "",
+            "postalCode": "",
+            "city": "Puebla",
             "countryCode": "MX",
             "region": "",
-            "name": "Puebla, MX"
+            "name": "Puebla"
         },
         "profiles": [
             {
@@ -116,6 +116,7 @@
         },
         {
             "name": "C#",
+            "level": "Master",
             "index": 1,
             "value": 40,
             "id": "70fe8ef7-91c8-441a-bbe5-ee36afca6507"
@@ -130,11 +131,6 @@
             "name": "NodeJS",
             "level": "Master",
             "value": 10,
-            "keywords": [
-                "HTML",
-                "CSS",
-                "Javascript"
-            ],
             "index": 3,
             "id": "48bf2185-9a41-44bf-9847-4a8c030580df"
         }
@@ -196,7 +192,7 @@
             "id": "7f1f4257-e5db-477d-aa5f-ababe0ab0b12",
             "images": [
                 {
-                    "url": "https://cdn.filestackcontent.com/aBOkTTkCQ66VOHUy0q8L"
+                    "url": "https://play-lh.googleusercontent.com/hJRwwJCvxhkAvBDw2C9ndvpi8Fr8CAuMeXB_2GxexGYYk4HqVYaq7Z2XBywj_rZP80A=w2880-h1358-rw    "
                 }
             ],
             "link": "https://dominospizza.ru",
@@ -213,7 +209,7 @@
             "id": "7f1f4257-e5db-477d-aa5f-ababe0ab0b12",
             "images": [
                 {
-                    "url": "https://cdn.filestackcontent.com/aBOkTTkCQ66VOHUy0q8L"
+                    "url": "https://play-lh.googleusercontent.com/ZwtOF7QuczQEltsEOm9VNZhMrZ7L5hqk1s6euLjPRrLUM35_3QcjdiaqeMDwG-6Nblo=w1872-h1358-rw"
                 }
             ],
             "link": "https://www.dominos.com.tr/",
@@ -266,10 +262,7 @@
         "interestedBy": "golang, blockchain etc."
     },
     "resumeCustomization": {
-        "imageHeader": {
-            "url": "https://cdn.filestackcontent.com/8I2wVnCRTFxypXRYLRsp",
-            "alt": "Default Banner"
-        },
+        "imageHeader": null,
         "cardsOrder": [
             {
                 "type": "basics",
@@ -315,6 +308,49 @@
         "fields": {
             "work": {
                 "customDateFormat": "YYYY"
+            }
+        },
+        "theme": {
+            "palette": {
+                "primary": {
+                    "50": "#e8f0f0",
+                    "100": "#d1e1e1",
+                    "200": "#a4c2c4",
+                    "300": "#76a4a6",
+                    "400": "#498589",
+                    "500": "#1b676b",
+                    "600": "#165256",
+                    "700": "#103e40",
+                    "800": "#0b292b",
+                    "900": "#051515",
+                    "contrastDefaultColor": "light"
+                },
+                "secondary": {
+                    "50": "#eef4ed",
+                    "100": "#dceada",
+                    "200": "#b9d5b6",
+                    "300": "#97bf91",
+                    "400": "#74aa6d",
+                    "500": "#519548",
+                    "600": "#41773a",
+                    "700": "#31592b",
+                    "800": "#203c1d",
+                    "900": "#101e0e",
+                    "contrastDefaultColor": "light"
+                },
+                "tertiary": {
+                    "50": "#f3f9e9",
+                    "100": "#e7f3d3",
+                    "200": "#cfe7a8",
+                    "300": "#b8dc7c",
+                    "400": "#a0d051",
+                    "500": "#88c425",
+                    "600": "#6d9d1e",
+                    "700": "#527616",
+                    "800": "#364e0f",
+                    "900": "#1b2707",
+                    "contrastDefaultColor": "light"
+                }
             }
         }
     }
