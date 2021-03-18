@@ -225,21 +225,20 @@
         "dreamJob": {
             "locations": [
                 {
-                    "name": "Valenciennes, France"
+                    "name": "Mexico"
                 },
                 {
-                    "name": "Lille, France"
+                    "name": "Portugal"
                 },
                 {
-                    "name": "Paris,France"
+                    "name": "Denmark"
                 }
             ],
             "remoteFrequency": "regularly"
         },
         "currentJob": {
             "issues": {
-                "boring_management": true,
-                "boring_team": true
+                "boring_management": true
             }
         },
         "education": {
@@ -250,10 +249,10 @@
                 "permanent"
             ],
             "codingYears": 15,
-            "codingReason": "J'ai commencé à coder sur Amstrad dans ma cave et je n'ai jamais arrêté depuis",
+            "codingReason": "",
             "searchState": "activelySearching",
             "experienceYears": 10,
-            "codeExperienceYears": 10,
+            "codeExperienceYears": 15,
             "otherExperienceYears": 0
         },
         "sound": {
