@@ -26,7 +26,7 @@ const SkillsPieChart = ({ data, variant, springOnOpenOpacityProps, onScrollOpaci
         [theme, variant]
     );
     const colorPalette = useMemo(
-        () => Array.from({ length: 3 }, (v, k) => chroma.mix(contentColor, backgroundColor, (2 * k) / 10).hex()),
+        () => Array.from({ length: 4 }, (v, k) => chroma.mix(contentColor, backgroundColor, (2 * k) / 10).hex()),
         [contentColor, backgroundColor]
     );
 

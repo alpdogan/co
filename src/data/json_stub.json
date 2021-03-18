@@ -105,34 +105,26 @@
         {
             "name": "React",
             "level": "Master",
-            "value": 40,
-            "keywords": [
-                "HTML",
-                "CSS",
-                "Javascript"
-            ],
-            "index": 0,
-            "id": "a41f51b9-30f8-4e91-a1cb-70f4d2ccdfdf"
+            "value": 100,
+            "keywords": ["HTML", "CSS", "Javascript"]
         },
         {
             "name": "C#",
             "level": "Master",
-            "index": 1,
-            "value": 40,
-            "id": "70fe8ef7-91c8-441a-bbe5-ee36afca6507"
+            "value": 80,
+            "keywords": [".NET", "C#", ".NET Core"]
         },
         {
             "name": "Kubernetes",
-            "index": 2,
-            "value": 10,
-            "id": "88a3bd71-e586-4305-b5b3-f9bbee4721ba"
+            "level": "Master",
+            "value": 40,
+            "keywords": ["AWS", "Azure", "Kubernetes"]
         },
         {
             "name": "NodeJS",
             "level": "Master",
-            "value": 10,
-            "index": 3,
-            "id": "48bf2185-9a41-44bf-9847-4a8c030580df"
+            "value": 60,
+            "keywords": ["NodeJS", "SSR", "Javascript"]
         }
     ],
     "languages": [

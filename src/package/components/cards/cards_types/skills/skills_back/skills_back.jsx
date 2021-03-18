@@ -36,9 +36,9 @@ const Content = ({ data, handleAddButtonClick }) => {
 
     const { top3Skills, othersSkills } = useMemo(() => {
         const newData = [...(data.skills ?? [])];
-        const top3 = newData.splice(0, 3);
+        const top4 = newData.splice(0, 4);
         return {
-            top3Skills: top3,
+            top3Skills: top4,
             othersSkills: newData
         };
     }, [data]);
