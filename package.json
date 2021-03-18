@@ -97,7 +97,6 @@
     "postcss-normalize": "8.0.1",
     "postcss-preset-env": "6.7.0",
     "postcss-safe-parser": "5.0.2",
-    "prerender": "^5.8.2",
     "prerender-node": "^3.2.5",
     "prop-types": "15.7.2",
     "react-app-polyfill": "^2.0.0",

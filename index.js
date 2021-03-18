@@ -1,7 +1,6 @@
 const express = require('express');
 const path = require('path');
 const prerender = require('prerender-node'); 
-const prerenderServer = require('prerender');
 var morgan = require('morgan');
 
 
@@ -29,6 +28,3 @@ const port = process.env.PORT || 5000;
 app.listen(port);
 console.log(`Server listening on ${port}`);
 
-
-const renderServer = prerenderServer();
-renderServer.start();
