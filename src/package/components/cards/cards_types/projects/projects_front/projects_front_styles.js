@@ -26,7 +26,8 @@ export const styles = (theme) => {
             height: '140%',
             width: '110%',
             objectFit: 'cover',
-            transform: 'rotate(-10deg)'
+            transform: 'rotate(-10deg)',
+            opacity: '0.7'
         },
         content: () => ({
             padding: [spacing * 6, spacing * 12, 0],
