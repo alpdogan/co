@@ -105,13 +105,13 @@
         {
             "name": "React",
             "level": "Master",
-            "value": 100,
+            "value": 80,
             "keywords": ["HTML", "CSS", "Javascript"]
         },
         {
             "name": "C#",
             "level": "Master",
-            "value": 80,
+            "value": 60,
             "keywords": [".NET", "C#", ".NET Core"]
         },
         {
@@ -123,7 +123,7 @@
         {
             "name": "NodeJS",
             "level": "Master",
-            "value": 60,
+            "value": 100,
             "keywords": ["NodeJS", "SSR", "Javascript"]
         }
     ],
