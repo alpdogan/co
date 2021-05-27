@@ -25,7 +25,7 @@ package.json
 [hub.docker.com/repository/docker/alpdogan/co](https://hub.docker.com/repository/docker/alpdogan/co)
 
 ```markdown
-docker pull alpdogan/co
+docker pull alpdogan/co:1.1.2-beta
 ```
 
 
