@@ -72,6 +72,15 @@ body {
     animation-timing-function: ease-in-out;
 }
 
+
+.social-container svg{
+    transition: all 300ms;
+}
+.social-container svg:hover{
+    fill: #fff;
+    transform: scale(2);
+}
+
 @keyframes draw {
     to {
         stroke-dashoffset: 0;
@@ -89,3 +98,5 @@ body {
         opacity: 0.15;
     }
 }
+
+
