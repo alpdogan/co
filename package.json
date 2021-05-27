@@ -24,9 +24,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/welovedevs/react-ultimate-resume.git"
+    "url": "git+https://github.com/alpdogan/co.git"
   },
-  "author": "WeLoveDevs.com",
+  "author": "Tugrul Alpdogan",
   "license": "AGPLv3",
   "peerDependencies": {
     "@material-ui/core": "^4.11.0",
