@@ -1,3 +1,4 @@
-code of alpdogan.co
+code of [alpdogan.co](https://alpdogan.co)
 
-react-ultimate-resume by WeLoveDevs.com 
+Documentation : [alpdogan.co/docs](https://alpdogan.co/docs)
+
