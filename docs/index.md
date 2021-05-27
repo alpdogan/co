@@ -2,6 +2,8 @@
 
 code of [alpdogan.co](https://alpdogan.co)
 
+Thanks to react-ultimate-resume
+
 ## installation
 ```markdown
 yarn
@@ -24,4 +26,9 @@ package.json
 ```markdown
 yarn start:client
 ```
+
+
+
+
+
 
