@@ -21,11 +21,13 @@ const AvatarComponent = ({ src, displayedName }) => {
     return (
         <div className={cn(classes.container, receivedGlobalClasses.container)}>
             <div className={cn(classes.imageContainer, classes.imageContainer)}>
-                <img
-                    className={cn(classes.image, receivedGlobalClasses.image)}
-                    src={pictureSource}
-                    alt={displayedName}
-                />
+                <div className={"head-container"}>
+                    <img
+                        className={cn(classes.image, receivedGlobalClasses.image)}
+                        src={pictureSource}
+                        alt={displayedName}
+                    />
+                </div>
             </div>
             {nodes}
         </div>
