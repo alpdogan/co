@@ -49,7 +49,7 @@ function App() {
 
     return (
         <DeveloperProfile
-            mode={'mode'}
+            mode={'readOnly'}
             data={data}
             onEdit={onEdit}
             onCustomizationChanged={onCustomizationChanged}
