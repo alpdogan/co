@@ -116,7 +116,7 @@ const Picture = ({ techno, classes }) => {
     if (!src || !techno) {
         return null;
     }
-    return <img src={src} alt={techno?.name} className={classes.logo} />;
+    return <img src={src} alt={techno?.name} className={classes.logo} style={{animation: `spin 5s linear infinite`}} />;
 };
 
 export const SkillsFront = memo(SkillsFrontComponent);
