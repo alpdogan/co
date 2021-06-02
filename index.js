@@ -9,6 +9,9 @@ app.use(
 );
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, "./build")));
+app.use(express.static(path.join(__dirname, "./build/static/css")));
+
+
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname + "/build/index.html"));
