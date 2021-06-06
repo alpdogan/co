@@ -7,7 +7,7 @@
 
 
 - 📄  Know about my experiences [alpdogan.co](https://alpdogan.co)
-- 📄  Documentation : [alpdogan.co/docs](https://alpdogan.co/docs)
+- 📄  Documentation [alpdogan.co/docs](https://alpdogan.co/docs)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
