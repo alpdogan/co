@@ -13,8 +13,13 @@ app.use(express.static(path.join(__dirname, "./build/static/css")));
 
 
 
-app.get("*", (req, res) => {
+app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + "/build/index.html"));
+});
+
+
+app.get('*', function(req, res){
+  res.send('dont even try :)', 404);
 });
 
 const port = process.env.PORT || 5000;
