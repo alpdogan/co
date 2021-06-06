@@ -58,7 +58,7 @@ export const UserInformations = () => {
                     classes={{
                         container: classes.description
                     }}
-                    component="h4"
+                    component="h1"
                 >
                     {data.basics?.summary}
                 </Typography>

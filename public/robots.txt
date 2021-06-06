@@ -1,2 +1,2 @@
-# https://www.robotstxt.org/robotstxt.html
+Sitemap: https://alpdogan.co/sitemap.xml
 User-agent: *
