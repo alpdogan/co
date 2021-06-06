@@ -109,16 +109,16 @@
             "keywords": ["HTML", "CSS", "Javascript"]
         },
         {
-            "name": "C#",
-            "level": "Master",
-            "value": 60,
-            "keywords": [".NET", "C#", ".NET Core"]
-        },
-        {
             "name": "Kubernetes",
             "level": "Master",
             "value": 40,
             "keywords": ["AWS", "Azure", "Kubernetes"]
+        },
+        {
+            "name": "C#",
+            "level": "Master",
+            "value": 60,
+            "keywords": [".NET", "C#", ".NET Core"]
         },
         {
             "name": "NodeJS",
