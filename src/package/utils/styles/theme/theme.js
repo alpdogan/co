@@ -28,8 +28,8 @@ export const DEFAULT_THEME = {
             imageSource: 'https://cdn.filestackcontent.com/8I2wVnCRTFxypXRYLRsp'
         },
         cards: {
-            height: 470,
-            width: 470,
+            height: 400,
+            width: 400,
             borderRadius: 20,
             default: {
                 backgroundColor: 'dark',

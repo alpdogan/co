@@ -8,5 +8,6 @@ export const DEFAULT_CARD_ORDER = [
     { type: 'gifs', variant: 0 },
     { type: 'interestedBy', variant: 3 },
     { type: 'language', variant: 4 },
+    { type: 'exchange', variant: 4 },
     { type: 'soundtrack', variant: 4 }
 ];

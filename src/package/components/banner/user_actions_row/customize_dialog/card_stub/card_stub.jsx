@@ -16,6 +16,7 @@ import { ReactComponent as ProjectsSvg } from '../../../../../assets/cards/proje
 import { ReactComponent as SchoolSvg } from '../../../../../assets/cards/school.svg';
 import { ReactComponent as SkillsSvg } from '../../../../../assets/cards/skills.svg';
 import { ReactComponent as SoundtrackSvg } from '../../../../../assets/cards/soundtrack.svg';
+import { ReactComponent as ExchangeSvg } from '../../../../../assets/cards/exchange.svg';
 import { ReactComponent as ExperiencesSvg } from '../../../../../assets/cards/experiences.svg';
 
 import { useOpenerState } from '../../../../hooks/use_opener_state';
@@ -36,6 +37,7 @@ const CARD_TYPE_MAPPING = {
     studies: SchoolSvg,
     skills: SkillsSvg,
     soundtrack: SoundtrackSvg,
+    exchange: ExchangeSvg,
     interestedBy: InterestedBySvg
 };
 

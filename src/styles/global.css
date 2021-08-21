@@ -75,7 +75,7 @@ body {
 .social-container{
     display: flex;
     justify-content: space-between;
-    width: 112px;
+    width: 90px;
 }
 
 .social-container svg{

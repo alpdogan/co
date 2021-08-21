@@ -69,8 +69,6 @@ function App() {
                 customization,
                 disableSortableExperience: false,
                 maxCardsPerRow: 3,
-
-
             }}
             additionalNodes={{
                 banner: {

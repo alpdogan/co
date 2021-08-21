@@ -246,10 +246,13 @@
             "codeExperienceYears": 10,
             "otherExperienceYears": 0
         },
+        "exchange": {
+            "embedUrl": "https://exchange.alpdogan.co/#/swap?outputCurrency=0xf4d62b3aed85b648f330a442db8ac820a1bc932f"
+        },
         "sound": {
             "embedUrl": "https://open.spotify.com/embed/playlist/37i9dQZF1DWWl7MndYYxge"
         },
-        "interestedBy": "golang, blockchain etc."
+        "interestedBy": "golang, blockchain, defi etc."
     },
     "resumeCustomization": {
         "imageHeader": null,
@@ -279,16 +282,20 @@
                 "variant": 4
             },
             {
-                "type": "gifs",
-                "variant": 0
+                "type": "language",
+                "variant": 4
             },
             {
                 "type": "interestedBy",
                 "variant": 3
             },
             {
-                "type": "language",
+                "type": "exchange",
                 "variant": 4
+            },
+            {
+                "type": "gifs",
+                "variant": 0
             },
             {
                 "type": "soundtrack",
