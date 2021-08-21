@@ -38,7 +38,7 @@ const ExchangeFrontComponent = ({ data, handleAddButtonClick }) => {
             {data?.embedUrl && (
                 <ProfileCardActions>
                     <ProfileCardButton onClick={handleButtonClick}>
-                        <FormattedMessage id="Exchange.front.button" defaultMessage="My playlist" />
+                        <FormattedMessage id="Exchange.front.button" defaultMessage="Exchange" />
                     </ProfileCardButton>
                 </ProfileCardActions>
             )}
