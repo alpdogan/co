@@ -2,7 +2,7 @@ import * as Yup from 'yup';
 
 export const ExchangeValidationSchema = () =>
     Yup.object({
-        embedUrl: Yup.string().max(100).url().required()
+        embedUrl: Yup.string().max(250).url().required()
     });
 
 export const validateExchangeComplete = (data) => {
