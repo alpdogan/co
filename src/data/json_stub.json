@@ -211,18 +211,18 @@
     "specific": {
         "basics": {
             "visaSponsorship": true,
-            "personalDescription": "I'm a Software Developer with 9+ years of experience. I like solving problems and making people's lives easier by coding."
+            "personalDescription": "I'm a Software Developer with 10+ years of experience. I like solving problems and making people's lives easier by coding."
         },
         "dreamJob": {
             "locations": [
                 {
-                    "name": "Portugal"
+                    "name": "United States"
                 },
                 {
                     "name": "Mexico"
                 },
                 {
-                    "name": "Denmark"
+                    "name": "Portugal"
                 }
             ],
             "remoteFrequency": "regularly"
@@ -274,8 +274,8 @@
                 "variant": 4
             },
             {
-                "type": "language",
-                "variant": 4
+                "type": "interestedBy",
+                "variant": 3
             },
             {
                 "type": "studies",
@@ -286,8 +286,8 @@
                 "variant": 4
             },
             {
-                "type": "interestedBy",
-                "variant": 3
+                "type": "language",
+                "variant": 4
             },
             {
                 "type": "dreamjob",
