@@ -34,7 +34,7 @@ export const styles = (theme) => {
                 padding: [spacing * 4, spacing * 6]
             },
             [QUERY_BETWEEN_MEDIUM_SMALL]: {
-                height: [550, '!important'],
+                height: [350, '!important'],
                 padding: [spacing * 4, spacing * 2.5]
             }
         },

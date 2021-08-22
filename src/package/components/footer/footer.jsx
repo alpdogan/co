@@ -9,7 +9,7 @@ import { useMediaQuery } from '@material-ui/core';
 
 import { ShareLinks } from './share_links/share_links';
 
-import { ReactComponent as Logo } from '../../assets/icons/brands/welovedevs.svg';
+import { ReactComponent as LinkedinLogo } from '../../assets/icons/brands/linkedin.svg';
 import { ReactComponent as GithubLogo } from '../../assets/icons/brands/github.svg';
 
 import { styles } from './footer_styles';
@@ -29,25 +29,34 @@ const FooterComponent = () => {
         return (
             <div className={cn(classes.container, useSmallLayout && classes.smallLayoutContainer)}>
                 <div className={classes.wldLogoGithubLogoContainer}>
-                    <a
-                        className={classes.logoLink}
-                        href="https://welovedevs.com"
-                        target="_blank"
-                        rel="noreferrer noopener"
+                    <Tooltip
+                        title={
+                            <FormattedMessage
+                                id="Footer.linkedin.tooltip"
+                                defaultMessage="Follow me"
+                            />
+                        }
                     >
-                        <Logo className={classes.logo} />
-                    </a>
+                        <a
+                            className={classes.logoLink}
+                            href="https://www.linkedin.com/in/alpdogan"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                        >
+                            <LinkedinLogo className={classes.githubLogo} />
+                        </a>
+                    </Tooltip>
                     <Tooltip
                         title={
                             <FormattedMessage
                                 id="Footer.github.tooltip"
-                                defaultMessage="Create your own developer profile!"
+                                defaultMessage="Thanks for your stars"
                             />
                         }
                     >
                         <a
                             className={classes.githubLink}
-                            href="https://github.com/welovedevs/developer-profile"
+                            href="https://github.com/alpdogan/co"
                             target="_bank"
                             rel="noreferer noopener"
                         >
@@ -62,18 +71,24 @@ const FooterComponent = () => {
 
     return (
         <div className={classes.container}>
-            <a className={classes.logoLink} href="https://welovedevs.com" target="_blank" rel="noreferrer noopener">
-                <Logo className={classes.logo} />
-            </a>
+            <Tooltip
+                title={
+                    <FormattedMessage id="Footer.linkedin.tooltip" defaultMessage="Follow me" />
+                }
+            >
+                <a className={classes.logoLink} href="https://www.linkedin.com/in/alpdogan" target="_blank" rel="noreferrer noopener">
+                    <LinkedinLogo className={classes.githubLogo} />
+                </a>
+            </Tooltip>
             <ShareLinks />
             <Tooltip
                 title={
-                    <FormattedMessage id="Footer.github.tooltip" defaultMessage="Create your own developer profile!" />
+                    <FormattedMessage id="Footer.github.tooltip" defaultMessage="Thanks for your stars" />
                 }
             >
                 <a
                     className={classes.githubLink}
-                    href="https://github.com/welovedevs/developer-profile"
+                    href="https://github.com/alpdogan/co"
                     target="_bank"
                     rel="noreferer noopener"
                 >
