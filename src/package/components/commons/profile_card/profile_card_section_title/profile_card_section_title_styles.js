@@ -8,7 +8,7 @@ export const styles = (theme) => {
         container: {
             color: 'inherit',
             fontWeight: 700,
-            fontSize: 30,
+            fontSize: 29,
             lineHeight: 1.4,
             overflow: 'hidden',
             overflowWrap: 'break-word',
