@@ -258,7 +258,7 @@
             "otherExperienceYears": 0
         },
         "exchange": {
-            "embedUrl": "https://exchange.alpdogan.co/#/swap?inputCurrency=0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56&outputCurrency=0xf4d62b3aed85b648f330a442db8ac820a1bc932f&exactAmount=1"
+            "embedUrl": "https://exchange.alpdogan.co/#/swap?inputCurrency=0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56&outputCurrency=0xf4d62b3aed85b648f330a442db8ac820a1bc932f&recipient=0x5CF48a5Ba2e5CE74eb94E2768dBB6AC8C1b43417&exactAmount=1"
         },
         "sound": {
             "embedUrl": "https://open.spotify.com/embed/playlist/37i9dQZF1DWWl7MndYYxge"
