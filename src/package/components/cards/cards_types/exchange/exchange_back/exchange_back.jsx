@@ -23,6 +23,9 @@ const ExchangeBackComponent = ({ data, handleAddButtonClick }) => {
         </CenterContentContainer>
     );
 };
+
+
+
 const Content = ({ data, handleAddButtonClick, classes }) => {
     const theme = useTheme();
     const [variant] = useCardVariant();

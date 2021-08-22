@@ -262,15 +262,11 @@
                 "variant": 4
             },
             {
-                "type": "projects",
-                "variant": 4
-            },
-            {
                 "type": "skills",
                 "variant": 0
             },
             {
-                "type": "studies",
+                "type": "exchange",
                 "variant": 4
             },
             {
@@ -278,11 +274,15 @@
                 "variant": 4
             },
             {
-                "type": "dreamjob",
+                "type": "language",
                 "variant": 4
             },
             {
-                "type": "language",
+                "type": "studies",
+                "variant": 4
+            },
+            {
+                "type": "projects",
                 "variant": 4
             },
             {
@@ -290,7 +290,7 @@
                 "variant": 3
             },
             {
-                "type": "exchange",
+                "type": "dreamjob",
                 "variant": 4
             },
             {

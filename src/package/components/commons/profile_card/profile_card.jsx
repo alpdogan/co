@@ -41,7 +41,8 @@ const ProfileCardComponent = ({
     editDialog,
     customEditAction,
     isComplete = true,
-    side: sideProps
+    side: sideProps,
+    ignoreMouseLeave = false,
 }) => {
     const changeSideTimeout = useRef();
     const { mode } = useContext(DeveloperProfileContext);
@@ -140,6 +141,10 @@ const ProfileCardComponent = ({
         if (hasDialogOpened) {
             return;
         }
+        if(ignoreMouseLeave){
+            return;
+        }
+
         setSide(SIDES.FRONT);
     }, [hasDialogOpened, setSide]);
 

@@ -53,6 +53,7 @@ const SoundtrackCardComponent = ({ variant, side }) => {
             }}
             variant={variant}
             side={currentSide}
+            ignoreMouseLeave={true}
         />
     );
 };

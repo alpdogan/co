@@ -16,6 +16,7 @@ const ExchangeCardComponent = ({ variant, side }) => {
     const mappedData = useMemo(() => JsonResumeToFlatObject(data, ExchangeMapping), [data]);
     const isComplete = useMemo(() => validateExchangeComplete(mappedData), [mappedData]);
 
+
     const currentSide = useMemo(() => {
         if (!isComplete && !isEditing) {
             return SIDES.FRONT;
@@ -26,7 +27,6 @@ const ExchangeCardComponent = ({ variant, side }) => {
     if (!isComplete && mode !== 'edit') {
         return null;
     }
-
     return (
         <ProfileCard
             kind="exchange"
@@ -39,6 +39,7 @@ const ExchangeCardComponent = ({ variant, side }) => {
             }}
             variant={variant}
             side={currentSide}
+            ignoreMouseLeave={true}
         />
     );
 };
