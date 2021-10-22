@@ -25,16 +25,6 @@
     },
     "work": [
         {
-            "name": "PandMe",
-            "position": "Software Architect",
-            "startDate": "2021-01-01",
-            "summary": " ",
-            "location": "UK",
-            "highlights": [
-                "Started the company"
-            ]
-        },
-        {
             "name": "Domino's Pizza",
             "position": "Tech Lead",
             "website": "https://dominospizza.ru",
