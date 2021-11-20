@@ -107,7 +107,7 @@
             "name": "React",
             "level": "Master",
             "value": 80,
-            "keywords": ["HTML", "CSS", "Javascript"]
+            "keywords": ["HTML", "CSS", "Javascript", "React", "Frontend"]
         },
         {
             "name": "Kubernetes",
@@ -125,7 +125,7 @@
             "name": "NodeJS",
             "level": "Master",
             "value": 100,
-            "keywords": ["NodeJS", "SSR", "Javascript"]
+            "keywords": ["NodeJS", "SSR", "Javascript", "Backend"]
         }
     ],
     "languages": [
@@ -211,8 +211,7 @@
     ],
     "specific": {
         "basics": {
-            "visaSponsorship": true,
-            "personalDescription": "I'm a Software Developer with 10+ years of experience. I like solving problems and making people's lives easier by coding."
+            "personalDescription": "Developing fault-tolerant distributed scaled systems. Programmer, technical leader, software architect with 10+ years of experience."
         },
         "dreamJob": {
             "locations": [
@@ -230,7 +229,7 @@
         },
         "currentJob": {
             "issues": {
-                "boring_management": true
+                "location": true
             }
         },
         "education": {
@@ -238,17 +237,17 @@
         },
         "work": {
             "contractTypes": [
-                "freelance"
+                "permanent"
             ],
             "codingYears": 15,
             "codingReason": "",
-            "searchState": "activelySearching",
+            "searchState": "openOpportunities",
             "experienceYears": 10,
             "codeExperienceYears": 10,
             "otherExperienceYears": 0
         },
         "exchange": {
-            "embedUrl": "https://exchange.alpdogan.co/#/swap?inputCurrency=0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56&outputCurrency=0xf4d62b3aed85b648f330a442db8ac820a1bc932f&recipient=0x5CF48a5Ba2e5CE74eb94E2768dBB6AC8C1b43417&exactAmount=1"
+            "embedUrl": "https://exchange.alpdogan.co/#/swap?inputCurrency=0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56&outputCurrency=0xf4d62b3aed85b648f330a442db8ac820a1bc932f&exactAmount=1"
         },
         "sound": {
             "embedUrl": "https://open.spotify.com/embed/playlist/37i9dQZF1DWWl7MndYYxge"
