@@ -64,7 +64,8 @@ const FooterComponent = () => {
                         </a>
                     </Tooltip>
                 </div>
-                <ShareLinks useSmallLayout />
+                <span>2021 - alpdogan.co</span>
+                {/* <ShareLinks useSmallLayout /> */}
             </div>
         );
     }
@@ -80,7 +81,8 @@ const FooterComponent = () => {
                     <LinkedinLogo className={classes.githubLogo} />
                 </a>
             </Tooltip>
-            <ShareLinks />
+            {/* <ShareLinks /> */}
+            <span>2021 - alpdogan.co</span>
             <Tooltip
                 title={
                     <FormattedMessage id="Footer.github.tooltip" defaultMessage="Thanks for your stars" />

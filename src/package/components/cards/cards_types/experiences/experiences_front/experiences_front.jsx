@@ -121,7 +121,11 @@ const Content = ({ hasWork, title, handleAddButtonClick, classes }) => {
                         container: cn(classes.typography, isTypographyTruncated && classes.truncatedTypography)
                     }}
                 >
-                    {title}
+                    <span style={{
+                        fontSize: '40px'
+                    }}>
+                        {title}
+                    </span>
                 </ProfileCardFrontTypography>
             </div>
         );

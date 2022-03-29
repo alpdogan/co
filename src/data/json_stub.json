@@ -25,13 +25,37 @@
     },
     "work": [
         {
+            "name": "OneSeven",
+            "position": "Solution Architect",
+            "website": "https://www.oneseventech.com",
+            "startDate": "2021-01-01",
+            "endDate": "",
+            "summary": " ",
+            "location": "St. Petersburg, FL",
+            "highlights": [
+                "Started the company"
+            ]
+        },
+        {
+            "name": "Cekpara",
+            "position": "Solution Architect",
+            "website": "https://www.cekpara.com",
+            "startDate": "2021-01-01",
+            "endDate": "2021-01-01",
+            "summary": " ",
+            "location": "Mexico - Istanbul",
+            "highlights": [
+                "Started the company"
+            ]
+        },
+        {
             "name": "Domino's Pizza",
             "position": "Tech Lead",
             "website": "https://dominospizza.ru",
             "startDate": "2017-01-01",
             "endDate": "2021-01-01",
             "summary": " ",
-            "location": "Moscow",
+            "location": "Istanbul - Moscow",
             "highlights": [
                 "Started the company"
             ]
@@ -188,7 +212,7 @@
                 }
             ],
             "link": "https://dominospizza.ru",
-            "name": "Domino's Pizza Russia",
+            "name": "Domino's Russia",
             "endDate": "2021-01-01"
         },
         {
@@ -205,7 +229,7 @@
                 }
             ],
             "link": "https://www.dominos.com.tr/",
-            "name": "Domino's Pizza Turkey",
+            "name": "Domino's Turkey",
             "endDate": "2018-11-01"
         }
     ],
@@ -250,7 +274,7 @@
             "embedUrl": "https://exchange.alpdogan.co/#/swap?inputCurrency=0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56&outputCurrency=0xf4d62b3aed85b648f330a442db8ac820a1bc932f&exactAmount=1"
         },
         "sound": {
-            "embedUrl": "https://open.spotify.com/embed/playlist/37i9dQZF1DWWl7MndYYxge"
+            "embedUrl": "https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn"
         },
         "interestedBy": "golang, blockchain, defi etc."
     },
@@ -271,10 +295,6 @@
             },
             {
                 "type": "experiences",
-                "variant": 4
-            },
-            {
-                "type": "interestedBy",
                 "variant": 3
             },
             {

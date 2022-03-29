@@ -22,7 +22,7 @@ const ExperienceContent = ({ experience, variant, classes }) => {
     const { formatMessage } = useIntl();
     const [buildTitle] = useAdditionalNodes('cards.experiences.back.experience.content.buildTitle', null);
     const [customization] = useCustomization();
-    const { id, name, summary, place, position } = experience;
+    const { id, name, summary, place, position, website } = experience;
     const dateString = useMemo(() => {
         const displayFormat = customization?.fields?.work?.customDateFormat || 'MMM YYYY';
         if (!experience.endDate) {
@@ -46,21 +46,21 @@ const ExperienceContent = ({ experience, variant, classes }) => {
         }
         if (place?.name) {
             if (builder.length) {
-                builder.push(' - ');
+                builder.push(<br />);
             }
             builder.push(place.name);
         }
-        if (builder.length) {
-            builder.push(<br />);
-        }
-        builder.push(dateString);
+        // if (builder.length) {
+        //     builder.push(<br />);
+        // }
+        // builder.push(dateString);
         return builder.map((value, index) => <Fragment key={`builder_part_${index}`}>{value}</Fragment>);
     }, [buildTitle, experience]);
     return (
         <ProfileCardSection key={id} cardVariant={variant}>
             <ProfileCardSectionTitle>{position}</ProfileCardSectionTitle>
             <ProfileCardSectionSubtitle classes={{ container: classes.subtitle }}>{title}</ProfileCardSectionSubtitle>
-            <ProfileCardSectionText>{summary}</ProfileCardSectionText>
+            <ProfileCardSectionText>{dateString}</ProfileCardSectionText>
         </ProfileCardSection>
     );
 };
