@@ -267,14 +267,14 @@
                 "month": 1,
                 "year": 2023
             },
-            "description": "lute.ly",
+            "description": "licenselounge.com",
             "id": "7f1f4257-e5db-477d-aa5f-ababe0ab0b12",
             "images": [
                 {
-                    "url": "https://lute.ly/favicon.ico"
+                    "url": "https://licenselounge.com/favicon.ico"
                 }
             ],
-            "link": "https://lute.ly",
+            "link": "https://licenselounge.com",
             "name": "License Lounge",
             "endDate": "2023-01-01"
         },
