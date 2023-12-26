@@ -122,7 +122,7 @@ const Content = ({ hasWork, title, handleAddButtonClick, classes }) => {
                     }}
                 >
                     <span style={{
-                        fontSize: '38px'
+                        fontSize: '32px'
                     }}>
                         {title}
                     </span>
