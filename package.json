@@ -100,6 +100,7 @@
     "prop-types": "15.7.2",
     "react-app-polyfill": "^2.0.0",
     "react-dev-utils": "^11.0.0",
+    "react-device-detect": "^2.2.3",
     "react-dropzone": "^10.2.1",
     "react-emoji-render": "^1.2.1",
     "react-images": "^1.1.0-beta.3",

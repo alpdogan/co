@@ -11,6 +11,7 @@ import { useCardVariant } from '../../../../hooks/profile_card_hooks/use_card_va
 
 import { styles } from './exchange_back_styles';
 import { OPACITY_TRANSITIONS } from '../../../../../utils/framer_motion/common_transitions/opacity_transitions';
+import {isMobile} from 'react-device-detect';
 
 const useStyles = createUseStyles(styles);
 
@@ -45,7 +46,10 @@ const Content = ({ data, handleAddButtonClick, classes }) => {
     if (!data?.embedUrl) {
         return <React.Fragment></React.Fragment>;
     }
-
+    
+    if(isMobile){
+        return <span>Only available in desktop browsers.</span>
+    }
     return (
         <>
             <span className={classes.loadingSpinnerContainer}>
