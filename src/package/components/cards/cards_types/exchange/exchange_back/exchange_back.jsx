@@ -1,4 +1,4 @@
-import React, { memo, useCallback, useMemo, useState } from 'react';
+import React, { memo, useCallback, useEffect, useMemo, useState } from 'react';
 
 import { createUseStyles, useTheme } from 'react-jss';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -70,12 +70,15 @@ const Content = ({ data, handleAddButtonClick, classes }) => {
                 height={height}
                 width={width}
                 frameBorder="0"
-                allow="encrypted-media"
+                allow="microphone"
                 onLoad={handleLoad}
                 animate={{ opacity: hasLoaded ? 1 : 0 }}
+                scrolling="no"
             />
         </>
     );
 };
+
+
 
 export const ExchangeBack = memo(ExchangeBackComponent);

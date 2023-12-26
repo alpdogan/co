@@ -27,6 +27,7 @@ const ExchangeCardComponent = ({ variant, side }) => {
     if (!isComplete && mode !== 'edit') {
         return null;
     }
+
     return (
         <ProfileCard
             kind="exchange"

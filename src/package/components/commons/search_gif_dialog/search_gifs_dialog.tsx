@@ -32,7 +32,7 @@ const SearchGifsDialogComponent: React.FC<
     const [query, setQuery] = useState('');
     const [debouncedQuery] = useDebounce(query, 500);
 
-    const handleInputChange = useCallback((event) => setQuery(event.target.value), []);
+    const handleInputChange = useCallback((event: { target: { value: React.SetStateAction<string>; }; }) => setQuery(event.target.value), []);
 
     return (
         <Dialog
@@ -103,17 +103,16 @@ const Results: React.FC<{
                 gifs &&
                 debouncedQuery &&
                 gifs.map((payload) => (
-                    <Tooltip key={`giphy_item_${payload.id}`} title="Select this gif">
-                        <button
-                            key={`result_${payload.id}`}
-                            type="button"
-                            className={classes.imageContainer}
-                            onClick={handleClick(payload)}
-                        >
-                            <img className={classes.image} src={payload.url} alt={payload.title} />
-                            {payload.user && <GifAuthorCredits user={payload.user} />}
-                        </button>
-                    </Tooltip>
+                    
+                    <button
+                        key={`result_${payload.id}`}
+                        type="button"
+                        className={classes.imageContainer}
+                        onClick={handleClick(payload)}
+                    >
+                    <img className={classes.image} src={payload.url} alt={payload.title} />
+                    {payload.user && <GifAuthorCredits user={payload.user} />}
+                </button>
                 ))}
         </div>
     );

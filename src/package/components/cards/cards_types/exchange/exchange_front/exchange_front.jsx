@@ -11,7 +11,9 @@ import { ProfileCardFrontTypography } from '../../../../commons/profile_card/pro
 import { ProfileCardActions } from '../../../../commons/profile_card/profile_card_actions/profile_card_actions';
 import { ProfileCardButton } from '../../../../commons/profile_card/profile_card_button/profile_card_button';
 
-import { ReactComponent as ExchangeLogo } from '../../../../../assets/icons/brands/token.svg';
+// import { ReactComponent as ExchangeLogo } from '../../../../../assets/icons/brands/token.svg';
+import { ReactComponent as AILogo } from '../../../../../assets/icons/brands/ai.svg';
+
 import { SIDES } from '../../../../commons/profile_card/profile_card_side/side';
 
 import { styles } from './exchange_front_styles';
@@ -38,7 +40,7 @@ const ExchangeFrontComponent = ({ data, handleAddButtonClick }) => {
             {data?.embedUrl && (
                 <ProfileCardActions>
                     <ProfileCardButton onClick={handleButtonClick}>
-                        <FormattedMessage id="Exchange.front.button" defaultMessage="Exchange" />
+                        <FormattedMessage id="Exchange.front.button" defaultMessage="Talk" />
                     </ProfileCardButton>
                 </ProfileCardActions>
             )}
@@ -52,9 +54,9 @@ const Content = ({ data, handleAddButtonClick, classes }) => {
     }
     return (
         <>
-            <ProfileCardFrontVector classes={{ container: classes.logo }} vector={ExchangeLogo} />
+            <ProfileCardFrontVector classes={{ container: classes.logo }} vector={AILogo} />
             <ProfileCardFrontTypography classes={{ container: classes.typography }}>
-                <FormattedMessage id="Exchange.front.title" defaultMessage="Discover my personal exchange" />
+                <FormattedMessage id="Exchange.front.title" defaultMessage="Discover my personal ai assistant" />
             </ProfileCardFrontTypography>
         </>
     );

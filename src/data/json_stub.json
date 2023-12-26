@@ -26,12 +26,24 @@
     "work": [
         {
             "name": "OneSeven",
-            "position": "Solution Architect",
+            "position": "Director of Engineering",
+            "website": "https://www.oneseventech.com",
+            "startDate": "2021-01-01",
+            "endDate": "",
+            "summary": "",
+            "location": "Miami, FL",
+            "highlights": [
+                "Started the company"
+            ]
+        },
+        {
+            "name": "OneSeven Tech",
+            "position": "Director of Engineering",
             "website": "https://www.oneseventech.com",
             "startDate": "2021-01-01",
             "endDate": "",
             "summary": " ",
-            "location": "St. Petersburg, FL",
+            "location": "Miami, FL",
             "highlights": [
                 "Started the company"
             ]
@@ -134,10 +146,10 @@
             "keywords": ["HTML", "CSS", "Javascript", "React", "Frontend"]
         },
         {
-            "name": "Kubernetes",
+            "name": "Terraform",
             "level": "Master",
             "value": 40,
-            "keywords": ["AWS", "Azure", "Kubernetes"]
+            "keywords": ["AWS", "Azure", "Terraform"]
         },
         {
             "name": "C#",
@@ -216,7 +228,7 @@
             "endDate": "2021-01-01"
         },
         {
-            "index": 2,
+            "index": 1,
             "date": {
                 "month": 11,
                 "year": 2018
@@ -231,11 +243,79 @@
             "link": "https://www.dominos.com.tr/",
             "name": "Domino's Turkey",
             "endDate": "2018-11-01"
+        },
+        {
+            "index": 1,
+            "date": {
+                "month": 1,
+                "year": 2023
+            },
+            "description": "AskElle AI",
+            "id": "7f1f4257-e5db-477d-aa5f-ababe0ab0b12",
+            "images": [
+                {
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/7d/c7/cb/7dc7cb9a-a920-d943-b69c-331cddcb5406/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/492x0w.webp"
+                }
+            ],
+            "link": "https://apps.apple.com/tr/app/askelle-ai/id6471620444",
+            "name": "AskElle AI",
+            "endDate": "2023-01-01"
+        },
+        {
+            "index": 1,
+            "date": {
+                "month": 1,
+                "year": 2023
+            },
+            "description": "lute.ly",
+            "id": "7f1f4257-e5db-477d-aa5f-ababe0ab0b12",
+            "images": [
+                {
+                    "url": "https://lute.ly/favicon.ico"
+                }
+            ],
+            "link": "https://lute.ly",
+            "name": "License Lounge",
+            "endDate": "2023-01-01"
+        },
+        {
+            "index": 1,
+            "date": {
+                "month": 1,
+                "year": 2022
+            },
+            "description": "CrewMeUp",
+            "id": "7f1f4257-e5db-477d-aa5f-ababe0ab0b12",
+            "images": [
+                {
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/73/81/28/7381289a-ac46-af3a-fbc1-c70b3e9fdc84/AppIcon-1x_U007emarketing-0-7-0-85-220.png/492x0w.webp"
+                }
+            ],
+            "link": "https://apps.apple.com/us/app/crew-me-up/id1482684249",
+            "name": "CrewMeUp",
+            "endDate": "2022-01-01"
+        },
+        {
+            "index": 1,
+            "date": {
+                "month": 1,
+                "year": 2023
+            },
+            "description": "iCharter booking",
+            "id": "7f1f4257-e5db-477d-aa5f-ababe0ab0b12",
+            "images": [
+                {
+                    "url": "https://icharterbooking.com/favicon.ico"
+                }
+            ],
+            "link": "https://icharterbooking.com",
+            "name": "iCharter",
+            "endDate": "2023-01-01"
         }
     ],
     "specific": {
         "basics": {
-            "personalDescription": "Developing fault-tolerant distributed scaled systems. Programmer, technical leader, software architect with 10+ years of experience."
+            "personalDescription": "Passionate about crafting fault-tolerant distributed scaled systems, I bring more than a decade of hands-on experience as a Programmer, Technical Leader, and Software Architect. I thrive on driving innovative solutions to tackle challenges and deliver impactful results."
         },
         "dreamJob": {
             "locations": [
@@ -243,10 +323,10 @@
                     "name": "United States"
                 },
                 {
-                    "name": "Mexico"
+                    "name": "Portugal"
                 },
                 {
-                    "name": "Portugal"
+                    "name": "Spain"
                 }
             ],
             "remoteFrequency": "regularly"
@@ -271,10 +351,10 @@
             "otherExperienceYears": 0
         },
         "exchange": {
-            "embedUrl": "https://exchange.alpdogan.co/#/swap?inputCurrency=0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56&outputCurrency=0xf4d62b3aed85b648f330a442db8ac820a1bc932f&exactAmount=1"
+            "embedUrl": "https://avatar.alpdogan.co"
         },
         "sound": {
-            "embedUrl": "https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn"
+            "embedUrl": "https://open.spotify.com/embed/playlist/25ZhMYdyB7lqYGXCsdE5TA"
         },
         "interestedBy": "golang, blockchain, defi etc."
     },
