@@ -29,9 +29,10 @@ export const styles = (theme) => {
             transform: 'rotate(-10deg)',
         },
         content: () => ({
-            padding: [spacing * 6, spacing * 12, 0],
             display: 'flex',
-            flex: 1
+            flex: 1,
+            alignItems: 'center',
+            justifyContent: 'center'
         }),
         overlay: {
             position: 'absolute',

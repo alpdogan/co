@@ -19,6 +19,7 @@ import { DEFAULT_CARD_ORDER } from './utils/cards_order';
 
 import { styles } from './cards_styles';
 import { useAdditionalNodes } from '../hooks/use_additional_nodes';
+import { StoryGameCard } from './cards_types/storygame/storygame_card';
 
 const useStyles = createUseStyles(styles);
 
@@ -33,6 +34,7 @@ const CARD_TYPE_MAPPING = {
     skills: SkillsCard,
     soundtrack: SoundtrackCard,
     exchange: ExchangeCard,
+    storygame: StoryGameCard,
     interestedBy: InterestedByCard
 };
 

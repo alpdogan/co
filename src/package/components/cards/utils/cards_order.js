@@ -9,5 +9,6 @@ export const DEFAULT_CARD_ORDER = [
     { type: 'interestedBy', variant: 3 },
     { type: 'language', variant: 4 },
     { type: 'exchange', variant: 4 },
+    { type: 'storygame', variant: 4 },
     { type: 'soundtrack', variant: 4 }
 ];

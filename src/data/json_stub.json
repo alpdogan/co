@@ -353,6 +353,9 @@
         "exchange": {
             "embedUrl": "https://avatar.alpdogan.co"
         },
+        "storygame": {
+            "embedUrl": "https://infinite.alpdogan.co/story?id=recqi5C7lrtVYoopp"
+        },
         "sound": {
             "embedUrl": "https://open.spotify.com/embed/playlist/25ZhMYdyB7lqYGXCsdE5TA"
         },
@@ -370,19 +373,23 @@
                 "variant": 0
             },
             {
-                "type": "exchange",
-                "variant": 4
-            },
-            {
                 "type": "experiences",
                 "variant": 3
             },
             {
-                "type": "studies",
+                "type": "exchange",
                 "variant": 4
             },
             {
                 "type": "projects",
+                "variant": 4
+            },
+            {
+                "type": "storygame",
+                "variant": 4
+            },
+            {
+                "type": "studies",
                 "variant": 4
             },
             {
