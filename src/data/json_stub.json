@@ -354,7 +354,7 @@
             "embedUrl": "https://avatar.alpdogan.co"
         },
         "storygame": {
-            "embedUrl": "https://infinite.alpdogan.co/story?id=recqi5C7lrtVYoopp"
+            "embedUrl": "https://calendar.alpdogan.co"
         },
         "sound": {
             "embedUrl": "https://open.spotify.com/embed/playlist/25ZhMYdyB7lqYGXCsdE5TA"
@@ -373,19 +373,19 @@
                 "variant": 0
             },
             {
-                "type": "experiences",
-                "variant": 3
+                "type": "storygame",
+                "variant": 4
             },
             {
-                "type": "exchange",
-                "variant": 4
+                "type": "experiences",
+                "variant": 3
             },
             {
                 "type": "projects",
                 "variant": 4
             },
             {
-                "type": "storygame",
+                "type": "exchange",
                 "variant": 4
             },
             {

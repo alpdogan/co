@@ -40,7 +40,7 @@ const StoryGameFrontComponent = ({ data, handleAddButtonClick }) => {
             {data?.embedUrl && (
                 <ProfileCardActions>
                     <ProfileCardButton onClick={handleButtonClick}>
-                        <FormattedMessage id="StoryGame.front.button" defaultMessage="Discover (Beta)" />
+                        <FormattedMessage id="StoryGame.front.button" defaultMessage="Book a call" />
                     </ProfileCardButton>
                 </ProfileCardActions>
             )}
@@ -56,9 +56,9 @@ const Content = ({ data, handleAddButtonClick, classes }) => {
         <>
             <ProfileCardFrontVector classes={{ container: classes.logo }} vector={Dice} />
             <ProfileCardFrontTypography classes={{ container: classes.typography }}>
-                <FormattedMessage id="StoryGame.front.title" defaultMessage="Infinite Gambit Storybook" />
+                <FormattedMessage id="StoryGame.front.title" defaultMessage="Let's Connect!" />
             </ProfileCardFrontTypography>
-            <p style={{margin:0, fontStyle:"italic"}} id="StoryGame.front.desc">an AI powered endless storybook...</p>
+            <p style={{margin:0, fontStyle:"italic"}} id="StoryGame.front.desc">Schedule a call with me to discuss your ideas, projects, or any inquiries. I look forward to chatting with you.</p>
         </>
     );
 };
