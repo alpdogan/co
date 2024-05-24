@@ -10,10 +10,10 @@
         "location": {
             "address": "",
             "postalCode": "",
-            "city": "Puebla",
-            "countryCode": "MX",
+            "city": "Istanbul",
+            "countryCode": "TR",
             "region": "",
-            "name": "Puebla"
+            "name": "Istanbul"
         },
         "profiles": [
             {
@@ -29,7 +29,7 @@
             "position": "Director",
             "website": "https://www.oneseventech.com",
             "startDate": "2021-01-01",
-            "endDate": "",
+            "endDate": "2024-01-01",
             "summary": "",
             "location": "Miami, FL",
             "highlights": [
@@ -41,7 +41,7 @@
             "position": "Director of Engineering",
             "website": "https://www.oneseventech.com",
             "startDate": "2021-01-01",
-            "endDate": "",
+            "endDate": "2024-01-01",
             "summary": " ",
             "location": "Miami, FL",
             "highlights": [
@@ -49,13 +49,13 @@
             ]
         },
         {
-            "name": "Cekpara",
+            "name": "Ulusal Faktoring",
             "position": "Solution Architect",
-            "website": "https://www.cekpara.com",
+            "website": "https://www.ulusalfaktoring.com",
             "startDate": "2021-01-01",
             "endDate": "2021-01-01",
             "summary": " ",
-            "location": "Mexico - Istanbul",
+            "location": "Istanbul",
             "highlights": [
                 "Started the company"
             ]
@@ -216,14 +216,14 @@
                 "month": 1,
                 "year": 2021
             },
-            "description": "https://dominospizza.ru",
+            "description": "dominospizza.ru",
             "id": "7f1f4257-e5db-477d-aa5f-ababe0ab0b12",
             "images": [
                 {
                     "url": "https://play-lh.googleusercontent.com/hJRwwJCvxhkAvBDw2C9ndvpi8Fr8CAuMeXB_2GxexGYYk4HqVYaq7Z2XBywj_rZP80A=w2880-h1358-rw    "
                 }
             ],
-            "link": "https://dominospizza.ru",
+            "link": "https://dominopizza.ru",
             "name": "Domino's Russia",
             "endDate": "2021-01-01"
         },
@@ -233,7 +233,7 @@
                 "month": 11,
                 "year": 2018
             },
-            "description": "https://www.dominos.com.tr",
+            "description": "dominos.com.tr",
             "id": "7f1f4257-e5db-477d-aa5f-ababe0ab0b12",
             "images": [
                 {
@@ -243,6 +243,108 @@
             "link": "https://www.dominos.com.tr/",
             "name": "Domino's Turkey",
             "endDate": "2018-11-01"
+        },
+        {
+            "index": 1,
+            "date": {
+                "month": 1,
+                "year": 2016
+            },
+            "description": "ikea.com.tr",
+            "id": "7f1f4257-e5db-477d-aa5f-ababe0ab0b12",
+            "images": [
+                {
+                    "url": "https://www.ikea.com.tr/favicon.ico"
+                }
+            ],
+            "link": "https://www.ikea.com.tr/",
+            "name": "Ikea",
+            "endDate": "2016-11-01"
+        },
+        {
+            "index": 1,
+            "date": {
+                "month": 1,
+                "year": 2016
+            },
+            "description": "qnbfinansbank.com",
+            "id": "7f1f4257-e5db-477d-aa5f-ababe0ab0b12",
+            "images": [
+                {
+                    "url": "https://www.qnbfinansbank.com/favicon.ico"
+                }
+            ],
+            "link": "https://www.qnbfinansbank.com/",
+            "name": "QNB Finansbank",
+            "endDate": "2016-11-01"
+        },
+        {
+            "index": 1,
+            "date": {
+                "month": 1,
+                "year": 2016
+            },
+            "description": "denizbank.com",
+            "id": "7f1f4257-e5db-477d-aa5f-ababe0ab0b12",
+            "images": [
+                {
+                    "url": "https://www.denizbank.com/_assets/img/favicon.ico"
+                }
+            ],
+            "link": "https://www.denizbank.com/",
+            "name": "Sberbank",
+            "endDate": "2016-11-01"
+        },
+        {
+            "index": 1,
+            "date": {
+                "month": 1,
+                "year": 2014
+            },
+            "description": "garantibbvaemeklilik.com.tr",
+            "id": "7f1f4257-e5db-477d-aa5f-ababe0ab0b12",
+            "images": [
+                {
+                    "url": "https://www.garantibbvaemeklilik.com.tr/etc/designs/gewebsite/favicon.ico"
+                }
+            ],
+            "link": "https://www.garantibbvaemeklilik.com.tr",
+            "name": "BBVA Garanti",
+            "endDate": "2014-11-01"
+        },
+        {
+            "index": 1,
+            "date": {
+                "month": 1,
+                "year": 2014
+            },
+            "description": "trtmuzik.net.tr",
+            "id": "7f1f4257-e5db-477d-aa5f-ababe0ab0b12",
+            "images": [
+                {
+                    "url": "https://www.trtmuzik.net.tr/favicon.ico"
+                }
+            ],
+            "link": "https://www.trtmuzik.net.tr",
+            "name": "TRT Muzik",
+            "endDate": "2014-11-01"
+        },
+        {
+            "index": 1,
+            "date": {
+                "month": 1,
+                "year": 2024
+            },
+            "description": "Danti AI",
+            "id": "7f1f4257-e5db-477d-aa5f-ababe0ab0b12",
+            "images": [
+                {
+                    "url": "https://danti.ai/favicon.ico"
+                }
+            ],
+            "link": "https://danti.ai/",
+            "name": "Danti AI",
+            "endDate": "2024-01-01"
         },
         {
             "index": 1,
@@ -267,6 +369,23 @@
                 "month": 1,
                 "year": 2023
             },
+            "description": "Cekpara",
+            "id": "7f1f4257-e5db-477d-aa5f-ababe0ab0b12",
+            "images": [
+                {
+                    "url": "https://www.cekpara.com/favicon.ico"
+                }
+            ],
+            "link": "https://www.cekpara.com/",
+            "name": "Ulusal Faktoring",
+            "endDate": "2023-01-01"
+        },
+        {
+            "index": 1,
+            "date": {
+                "month": 1,
+                "year": 2023
+            },
             "description": "licenselounge.com",
             "id": "7f1f4257-e5db-477d-aa5f-ababe0ab0b12",
             "images": [
@@ -276,6 +395,40 @@
             ],
             "link": "https://licenselounge.com",
             "name": "License Lounge",
+            "endDate": "2023-01-01"
+        },
+        {
+            "index": 1,
+            "date": {
+                "month": 1,
+                "year": 2018
+            },
+            "description": "Sabri Ulker",
+            "id": "7f1f4257-e5db-477d-aa5f-ababe0ab0b12",
+            "images": [
+                {
+                    "url": "https://www.sabriulkerinhayathikayesi.com/Templates/Default/assets/img/fav.png"
+                }
+            ],
+            "link": "https://www.sabriulkerinhayathikayesi.com",
+            "name": "Sabri Ulker",
+            "endDate": "2018-01-01"
+        },
+        {
+            "index": 1,
+            "date": {
+                "month": 1,
+                "year": 2023
+            },
+            "description": "iCharter booking",
+            "id": "7f1f4257-e5db-477d-aa5f-ababe0ab0b12",
+            "images": [
+                {
+                    "url": "https://icharterbooking.com/favicon.ico"
+                }
+            ],
+            "link": "https://icharterbooking.com",
+            "name": "iCharter",
             "endDate": "2023-01-01"
         },
         {
@@ -294,23 +447,6 @@
             "link": "https://apps.apple.com/us/app/crew-me-up/id1482684249",
             "name": "CrewMeUp",
             "endDate": "2022-01-01"
-        },
-        {
-            "index": 1,
-            "date": {
-                "month": 1,
-                "year": 2023
-            },
-            "description": "iCharter booking",
-            "id": "7f1f4257-e5db-477d-aa5f-ababe0ab0b12",
-            "images": [
-                {
-                    "url": "https://icharterbooking.com/favicon.ico"
-                }
-            ],
-            "link": "https://icharterbooking.com",
-            "name": "iCharter",
-            "endDate": "2023-01-01"
         }
     ],
     "specific": {
@@ -373,19 +509,11 @@
                 "variant": 0
             },
             {
-                "type": "storygame",
-                "variant": 4
-            },
-            {
                 "type": "experiences",
                 "variant": 3
             },
             {
                 "type": "projects",
-                "variant": 4
-            },
-            {
-                "type": "exchange",
                 "variant": 4
             },
             {

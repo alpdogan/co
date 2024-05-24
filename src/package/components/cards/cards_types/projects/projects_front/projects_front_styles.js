@@ -32,7 +32,8 @@ export const styles = (theme) => {
             display: 'flex',
             flex: 1,
             alignItems: 'center',
-            justifyContent: 'center'
+            justifyContent: 'flex-start',
+            marginLeft: '10%'
         }),
         overlay: {
             position: 'absolute',
