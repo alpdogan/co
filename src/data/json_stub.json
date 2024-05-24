@@ -367,6 +367,23 @@
             "index": 1,
             "date": {
                 "month": 1,
+                "year": 2024
+            },
+            "description": "OnTop",
+            "id": "7f1f4257-e5db-477d-aa5f-ababe0ab0b12",
+            "images": [
+                {
+                    "url": "https://bookface-images.s3.amazonaws.com/logos/4741dd4c9ae724287931b05ee753e9f48df7a67f.png"
+                }
+            ],
+            "link": "https://getontop.com/",
+            "name": "OnTop",
+            "endDate": "2024-01-01"
+        },
+        {
+            "index": 1,
+            "date": {
+                "month": 1,
                 "year": 2023
             },
             "description": "Cekpara",
