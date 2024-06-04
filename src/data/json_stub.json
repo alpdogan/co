@@ -473,9 +473,6 @@
         "dreamJob": {
             "locations": [
                 {
-                    "name": "United States"
-                },
-                {
                     "name": "Portugal"
                 },
                 {
@@ -507,7 +504,7 @@
             "embedUrl": "https://avatar.alpdogan.co"
         },
         "storygame": {
-            "embedUrl": "https://calendar.alpdogan.co"
+            "embedUrl": "https://gallery.alpdogan.co"
         },
         "sound": {
             "embedUrl": "https://open.spotify.com/embed/artist/6pmxr66tMAePxzOLfjGNcX?utm_source=generator&theme=0"
@@ -550,7 +547,7 @@
                 "variant": 0
             },
             {
-                "type": "soundtrack",
+                "type": "storygame",
                 "variant": 4
             }
         ],
