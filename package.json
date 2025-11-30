@@ -14,7 +14,7 @@
     "postpackage": "cp-cli src/package/i18n i18n && cp-cli src/package/assets assets",
     "test-build": "rimraf ./test-build && ./node_modules/.bin/babel --extensions '.ts,.tsx,.js,.jsx' src -d ./test_build",
     "posttest-build": "rimraf ./test_build ./styles ",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider node scripts/build.js",
+    "build": "node scripts/build.js",
     "build:messages": "NODE_ENV=production babel ./src >/dev/null",
     "serve": "node scripts/build.js && serve build",
     "manage:translations": "node ./translationRunner.js",
