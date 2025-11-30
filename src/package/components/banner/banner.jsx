@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React, { memo, useEffect, useState } from 'react';
 
 import cn from 'classnames';
 import { createUseStyles } from 'react-jss';
@@ -30,9 +30,19 @@ const BannerComponent = ({ customizationOptions, onCustomizationChanged }) => {
     const [actionsButtons] = useAdditionalNodes('banner.actionsButtons', null);
     const [globalReceivedBannerClasses = {}] = useReceivedGlobalClasses('banner');
     const [isEditing] = useIsEditing();
+    const [scrollY, setScrollY] = useState(0);
 
     const imageInformations = customizationOptions?.imageHeader;
     const bannerImageCredits = customizationOptions?.imageHeader?.credits;
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrollY(window.scrollY);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     return (
         <div className={cn(classes.container, globalReceivedBannerClasses.container)}>
@@ -45,7 +55,7 @@ const BannerComponent = ({ customizationOptions, onCustomizationChanged }) => {
 
                 <div className={"pattern"}>
                     <svg version="1.1" id="banner-anim" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 1820 1080" style={{enableBackground:"new 0 0 1820 1080"}} xmlXSpace="preserve">
+                        viewBox="0 0 1820 1080" style={{enableBackground:"new 0 0 1820 1080", transform: `translateY(${scrollY * 0.5}px)`}} xmlXSpace="preserve">
 
                     <g id="banner-container">
                         <defs>

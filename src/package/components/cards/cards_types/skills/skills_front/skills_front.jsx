@@ -103,20 +103,26 @@ const Picture = ({ techno, classes }) => {
     const theme = useTheme();
     const [variant] = useCardVariant();
     const { backgroundColor } = getColorsFromCardVariant(theme, variant);
-    const src = useMemo(() => {
+    const { src, shouldInvert } = useMemo(() => {
         const hex = getHexFromPaletteColor(theme, backgroundColor);
         const luminance = chroma(hex).luminance();
-        if (luminance < 0.98) {
-            return `https://process.filestackapi.com/output=format:png/negative/modulate=brightness:1000/compress/${
-                techno?.handle || DEFAULT_TECHNO_HANDLE
-            }`;
-        }
-        return `https://process.filestackapi.com/output=format:png/${techno?.handle || DEFAULT_TECHNO_HANDLE}`;
+        const shouldInvert = luminance < 0.98;
+        const baseUrl = `https://cdn.filestackcontent.com/${techno?.handle || DEFAULT_TECHNO_HANDLE}`;
+        return {
+            src: baseUrl,
+            shouldInvert
+        };
     }, [techno, theme, backgroundColor]);
     if (!src || !techno) {
         return null;
     }
-    return <img src={src} alt={techno?.name} className={classes.logo} style={{animation: `spin 5s linear infinite`}} />;
+    const imgStyle = {
+        animation: `spin 5s linear infinite`,
+        ...(shouldInvert && {
+            filter: 'brightness(0) invert(1)'
+        })
+    };
+    return <img src={src} alt={techno?.name} className={classes.logo} style={imgStyle} />;
 };
 
 export const SkillsFront = memo(SkillsFrontComponent);

@@ -25,15 +25,15 @@ const CustomLabel = (props) => {
         return technologies[name];
     }, [technologies, name]);
 
-    const src = useMemo(() => {
+    const { src, shouldInvert } = useMemo(() => {
         const hex = getHexFromPaletteColor(theme, backgroundColor);
         const luminance = chroma(hex).luminance();
-        if (luminance < 0.98) {
-            return `https://process.filestackapi.com/output=format:png/negative/modulate=brightness:1000/compress/${
-                techno?.handle || DEFAULT_TECHNO_HANDLE
-            }`;
-        }
-        return `https://process.filestackapi.com/output=format:png/${techno?.handle || DEFAULT_TECHNO_HANDLE}`;
+        const shouldInvert = luminance < 0.98;
+        const baseUrl = `https://cdn.filestackcontent.com/${techno?.handle || DEFAULT_TECHNO_HANDLE}`;
+        return {
+            src: baseUrl,
+            shouldInvert
+        };
     }, [techno, theme, backgroundColor]);
 
     const { cos, startX, startY, inflexionX, inflexionY, endX, endY, textAnchor, logoXOffset } = useMemo(() => {
@@ -68,7 +68,14 @@ const CustomLabel = (props) => {
                     fill="none"
                 />
                 <g transform={`translate(${endX + (cos >= 0 ? 1 : -1) * 8},${endY - 10})`} width="100">
-                    <image width="25" height="25" xlinkHref={src} y="-10" transform={`translate(${logoXOffset},-6)`} />
+                    <image 
+                        width="25" 
+                        height="25" 
+                        xlinkHref={src} 
+                        y="-10" 
+                        transform={`translate(${logoXOffset},-6)`}
+                        style={shouldInvert ? { filter: 'brightness(0) invert(1)' } : {}}
+                    />
                     <text
                         textAnchor={textAnchor}
                         fill={customColor}

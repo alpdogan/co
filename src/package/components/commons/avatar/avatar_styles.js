@@ -10,13 +10,13 @@ export const styles = ({ palette }) => ({
         minHeight: 110,
         minWidth: 110,
         borderRadius: '100%',
-        backgroundColor: palette.dark[500],
+        backgroundColor: 'transparent',
         overflow: 'hidden',
         ...center
     },
     image: {
-        height: 'calc(100% + 2px)',
-        width: 'calc(100% + 2px)',
+        height: '100%',
+        width: '100%',
         objectFit: 'cover'
     }
 });

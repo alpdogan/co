@@ -25,13 +25,25 @@
     },
     "work": [
         {
-            "name": "OneSeven",
-            "position": "Director",
-            "website": "https://www.oneseventech.com",
-            "startDate": "2021-01-01",
-            "endDate": "2024-01-01",
+            "name": "Getir",
+            "position": "Sr. Software Engineer II",
+            "website": "https://getir.com",
+            "startDate": "2025-01-01",
+            "endDate": "",
             "summary": "",
-            "location": "Miami, FL",
+            "location": "Istanbul",
+            "highlights": [
+                "Started the company"
+            ]
+        },
+        {
+            "name": "SmartMessage",
+            "position": "Head of Engineering",
+            "website": "https://smartmessage.com",
+            "startDate": "2024-01-01",
+            "endDate": "2025-01-01",
+            "summary": "",
+            "location": "Istanbul",
             "highlights": [
                 "Started the company"
             ]
@@ -127,7 +139,16 @@
             "endDate": "2020-01-01",
             "gpa": "",
             "courses": []
-        }
+        },
+        {
+            "institution": "Anadolu University",
+            "area": "Management Information Systems",
+            "studyType": "B.Sc.",
+            "startDate": "2025-01-01",
+            "endDate": "",
+            "gpa": "",
+            "courses": []
+        }        
     ],
     "awards": [
         {
@@ -177,7 +198,7 @@
         },
         {
             "language": "Spanish",
-            "value": 10,
+            "value": 30,
             "fluency": "Native speaker"
         }
     ],
@@ -210,6 +231,23 @@
     ],
     "references": [],
     "projects": [
+        {
+            "index": 1,
+            "date": {
+                "month": 1,
+                "year": 2025
+            },
+            "description": "mexicanizate.alpdogan.co",
+            "id": "7f1f4257-e5db-477d-aa5f-ababe0ab0b12",
+            "images": [
+                {
+                    "url": "https://mexicanizate.alpdogan.co/assets/images/icon.png"
+                }
+            ],
+            "link": "https://mexicanizate.alpdogan.co",
+            "name": "Mexicanizate",
+            "endDate": "2025-01-01"
+        },
         {
             "index": 1,
             "date": {
@@ -468,7 +506,7 @@
     ],
     "specific": {
         "basics": {
-            "personalDescription": "Passionate about crafting fault-tolerant distributed scaled systems, I bring more than a decade of hands-on experience as a Programmer, Technical Leader, and Software Architect. I thrive on driving innovative solutions to tackle challenges and deliver impactful results."
+            "personalDescription": "Software Engineer building fast, resilient distributed systems and solving complex problems through practical architecture and clean, efficient code."
         },
         "dreamJob": {
             "locations": [
@@ -493,11 +531,11 @@
             "contractTypes": [
                 "permanent"
             ],
-            "codingYears": 15,
+            "codingYears": 19,
             "codingReason": "",
             "searchState": "openOpportunities",
-            "experienceYears": 10,
-            "codeExperienceYears": 10,
+            "experienceYears": 14,
+            "codeExperienceYears": 14,
             "otherExperienceYears": 0
         },
         "exchange": {

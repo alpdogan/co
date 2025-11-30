@@ -67,7 +67,7 @@ const ExperienceContent = ({ experience, variant, classes }) => {
 
 const Content = ({ data, handleAddButtonClick, classes }) => {
     const hasWork = useMemo(() => existsAndNotEmpty(data?.work), [data]);
-    const experiences = data.work?.filter(({ position, summary }) => Boolean(position && summary));
+    const experiences = data.work?.filter(({ position }) => Boolean(position));
 
     if (!hasWork) {
         return <NoWork {...{ handleAddButtonClick }} />;
